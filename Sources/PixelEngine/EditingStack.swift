@@ -31,12 +31,18 @@ public extension EditingStackDelegate {
 }
 
 open class EditingStack {
+  
+  public class Callbacks {
+    public var didChangeCurrentEdit: (EditingStack, EditingStack.Edit) -> Void = { _, _ in }
+  }
 
   // MARK: - Stored Properties
 
   public let source: ImageSourceType
 
   public weak var delegate: EditingStackDelegate?
+  
+  public let callbacks: Callbacks = .init()
 
   public let preferredPreviewSize: CGSize
 
@@ -300,6 +306,7 @@ open class EditingStack {
     
     self.previewImage = result
     self.delegate?.editingStack(self, didChangeCurrentEdit: self.currentEdit)
+    self.callbacks.didChangeCurrentEdit(self, self.currentEdit)
     
     // TODO: Ignore vignette and blur (convolutions)
 //    adjustmentImage = filters.reduce(source.image) { (image, filter) -> CIImage in

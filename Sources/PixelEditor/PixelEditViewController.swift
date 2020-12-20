@@ -47,11 +47,11 @@ public final class PixelEditContext {
     case undo
   }
 
-  fileprivate var didReceiveAction: (Action) -> Void = { _ in }
+  public var didReceiveAction: (Action) -> Void = { _ in }
   
   public let options: Options
 
-  fileprivate init(options: Options) {
+  public init(options: Options) {
     self.options = options
   }
 
