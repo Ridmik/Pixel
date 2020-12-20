@@ -115,6 +115,12 @@
 		4BEE65132174E99600F3578E /* EngineLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE65122174E99600F3578E /* EngineLog.swift */; };
 		4BEE65152174EB5800F3578E /* DrawnPathInRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEE65142174EB5800F3578E /* DrawnPathInRect.swift */; };
 		5FEA3663DD99BD359BFF0ED4 /* Pods_PixelEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77AF225663E1B55649C3398D /* Pods_PixelEditor.framework */; };
+		AF5A0780258F68BD005EB2C2 /* ImageGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A077A258F68BD005EB2C2 /* ImageGalleryCell.swift */; };
+		AF5A0781258F68BD005EB2C2 /* ImageGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5A077B258F68BD005EB2C2 /* ImageGalleryCell.xib */; };
+		AF5A0782258F68BD005EB2C2 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A077C258F68BD005EB2C2 /* RoundedCornerView.swift */; };
+		AF5A0783258F68BD005EB2C2 /* ImagesEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A077D258F68BD005EB2C2 /* ImagesEditViewModel.swift */; };
+		AF5A0784258F68BD005EB2C2 /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A077E258F68BD005EB2C2 /* ImageGalleryView.swift */; };
+		AF5A0785258F68BD005EB2C2 /* ImagesEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A077F258F68BD005EB2C2 /* ImagesEditViewController.swift */; };
 		FC5DAE6E23A75ACB00DD51E6 /* PHAssetDownloadEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5DAE6C23A75A8A00DD51E6 /* PHAssetDownloadEditorViewController.swift */; };
 		FCC7962623C58209009ACD8A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC7962523C58209009ACD8A /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -270,6 +276,12 @@
 		77AF225663E1B55649C3398D /* Pods_PixelEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98AC6E4BEF28CC71031BF300 /* Pods-PixelEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelEditor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PixelEditor/Pods-PixelEditor.debug.xcconfig"; sourceTree = "<group>"; };
 		9B38E5B35129587C07BF56E1 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5A077A258F68BD005EB2C2 /* ImageGalleryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryCell.swift; sourceTree = "<group>"; };
+		AF5A077B258F68BD005EB2C2 /* ImageGalleryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryCell.xib; sourceTree = "<group>"; };
+		AF5A077C258F68BD005EB2C2 /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		AF5A077D258F68BD005EB2C2 /* ImagesEditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesEditViewModel.swift; sourceTree = "<group>"; };
+		AF5A077E258F68BD005EB2C2 /* ImageGalleryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
+		AF5A077F258F68BD005EB2C2 /* ImagesEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesEditViewController.swift; sourceTree = "<group>"; };
 		D063024D47BA1B6BB7890F47 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		FC5DAE6C23A75A8A00DD51E6 /* PHAssetDownloadEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHAssetDownloadEditorViewController.swift; sourceTree = "<group>"; };
 		FCC7962523C58209009ACD8A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -505,6 +517,12 @@
 				4BE01797216F16120026DFD6 /* SmallUIImageViewController.swift */,
 				4BE01799216F16250026DFD6 /* SmallHardwareImageViewController.swift */,
 				4B1E94B2217624A700E9DFB8 /* SliderViewController.swift */,
+				AF5A077F258F68BD005EB2C2 /* ImagesEditViewController.swift */,
+				AF5A077D258F68BD005EB2C2 /* ImagesEditViewModel.swift */,
+				AF5A077E258F68BD005EB2C2 /* ImageGalleryView.swift */,
+				AF5A077A258F68BD005EB2C2 /* ImageGalleryCell.swift */,
+				AF5A077B258F68BD005EB2C2 /* ImageGalleryCell.xib */,
+				AF5A077C258F68BD005EB2C2 /* RoundedCornerView.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -732,6 +750,7 @@
 				4B9E8E772180E3C40071DE91 /* LUT_M06.png in Resources */,
 				4B9E8E7C2180E3C50071DE91 /* LUT_M11.png in Resources */,
 				4B9E8E782180E3C40071DE91 /* LUT_M01.png in Resources */,
+				AF5A0781258F68BD005EB2C2 /* ImageGalleryCell.xib in Resources */,
 				4B9E8E732180E3C40071DE91 /* LUT_M12.png in Resources */,
 				4B01C563217F799E00C50EDE /* nasa.jpg in Resources */,
 				4B600B2A216B7C9E001E1456 /* Assets.xcassets in Resources */,
@@ -902,14 +921,19 @@
 			files = (
 				4BE01796216F08D80026DFD6 /* HardwareImageViewController.swift in Sources */,
 				4BE0179A216F16250026DFD6 /* SmallHardwareImageViewController.swift in Sources */,
+				AF5A0780258F68BD005EB2C2 /* ImageGalleryCell.swift in Sources */,
 				FC5DAE6E23A75ACB00DD51E6 /* PHAssetDownloadEditorViewController.swift in Sources */,
 				4B600B25216B7C9C001E1456 /* ViewController.swift in Sources */,
 				4BE01798216F16120026DFD6 /* SmallUIImageViewController.swift in Sources */,
 				4B9B02E1216BB6D4001593B9 /* UIImageViewViewController.swift in Sources */,
 				4B600B23216B7C9C001E1456 /* AppDelegate.swift in Sources */,
+				AF5A0785258F68BD005EB2C2 /* ImagesEditViewController.swift in Sources */,
 				4B47D066216CC5DB0007B594 /* EditorViewController.swift in Sources */,
+				AF5A0784258F68BD005EB2C2 /* ImageGalleryView.swift in Sources */,
+				AF5A0783258F68BD005EB2C2 /* ImagesEditViewModel.swift in Sources */,
 				4B1E94B3217624A700E9DFB8 /* SliderViewController.swift in Sources */,
 				4B01C561217F72BA00C50EDE /* ResizeViewController.swift in Sources */,
+				AF5A0782258F68BD005EB2C2 /* RoundedCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
