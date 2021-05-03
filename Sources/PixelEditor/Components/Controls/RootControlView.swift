@@ -107,7 +107,7 @@ final class RootControl : RootControlBase {
 
       filtersButton.addTarget(self, action: #selector(didTapFilterButton), for: .touchUpInside)
       editButton.addTarget(self, action: #selector(didTapEditButton), for: .touchUpInside)
-      if #available(iOSApplicationExtension 13.0, *) {
+      if #available(iOS 13.0, *) {
         editButton.setTitleColor(.label, for: .selected)
         filtersButton.setTitleColor(.label.withAlphaComponent(0.5), for: .normal)
         editButton.setTitleColor(.label.withAlphaComponent(0.5), for: .normal)

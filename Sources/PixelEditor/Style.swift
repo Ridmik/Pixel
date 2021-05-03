@@ -37,7 +37,7 @@ public struct Style {
         case .dark:
           backgroundColor = .black
         case .unspecified:
-          if #available(iOSApplicationExtension 13.0, *) {
+          if #available(iOS 13.0, *) {
             backgroundColor = .systemBackground
           } else {
             backgroundColor = .white
@@ -54,14 +54,14 @@ public struct Style {
   public var black: UIColor
 
   public init() {
-    if #available(iOSApplicationExtension 12.0, *) {
+    if #available(iOS 12.0, *) {
       switch UIScreen.main.traitCollection.userInterfaceStyle {
       case .light:
         black = .black
       case .dark:
         black = .white
       case .unspecified:
-        if #available(iOSApplicationExtension 13.0, *) {
+        if #available(iOS 13.0, *) {
           black = .label
         } else {
           black = .black
