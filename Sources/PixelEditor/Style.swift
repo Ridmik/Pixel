@@ -30,7 +30,7 @@ public struct Style {
     public var backgroundColor: UIColor
 
     public init() {
-      if #available(iOSApplicationExtension 12.0, *) {
+      if #available(iOS 12.0, *) {
         switch UIScreen.main.traitCollection.userInterfaceStyle {
         case .light:
           backgroundColor = .white
