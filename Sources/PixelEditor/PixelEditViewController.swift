@@ -280,7 +280,6 @@ public final class PixelEditViewController : UIViewController {
           }
 
         }
-        view.backgroundColor = .white
 
         let guide = UILayoutGuide()
 
@@ -338,7 +337,7 @@ public final class PixelEditViewController : UIViewController {
       }
 
       root: do {
-        view.backgroundColor = Style().control.backgroundColor
+        view.backgroundColor = Style.default.control.backgroundColor
       }
 
       edit: do {
