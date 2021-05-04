@@ -99,7 +99,8 @@ extension EditorViewController : UIImagePickerControllerDelegate, UINavigationCo
     if usesSquare {
 
       let controller = PixelEditViewController.init(
-        image: image
+        image: image,
+        interfaceStyle: "dark"
       )
 
       controller.delegate = self
@@ -108,7 +109,7 @@ extension EditorViewController : UIImagePickerControllerDelegate, UINavigationCo
 
     } else {
 
-      let controller = PixelEditViewController(image: image, usesSquareCropping: false)
+      let controller = PixelEditViewController(image: image, usesSquareCropping: false, interfaceStyle: "dark")
 
       controller.delegate = self
 

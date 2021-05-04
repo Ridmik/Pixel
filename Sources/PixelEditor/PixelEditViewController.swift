@@ -119,6 +119,8 @@ public final class PixelEditViewController : UIViewController {
   private let doneButtonTitle: String
   
   private var aspectConstraint: NSLayoutConstraint?
+  
+  private var interfaceStyle = "unspecified"
 
   private lazy var doneButton = UIBarButtonItem(
     title: doneButtonTitle,
@@ -187,7 +189,8 @@ public final class PixelEditViewController : UIViewController {
     doneButtonTitle: String = L10n.done,
     colorCubeStorage: ColorCubeStorage = .default,
     usesSquareCropping: Bool = true,
-    options: Options = .current
+    options: Options = .current,
+    interfaceStyle: String = "unspecified"
   ) {
 
     let source = StaticImageSource(source: image)
@@ -196,7 +199,8 @@ public final class PixelEditViewController : UIViewController {
       source: source,
       colorCubeStorage: colorCubeStorage,
       usesSquareCropping: usesSquareCropping,
-      options: options
+      options: options,
+      interfaceStyle: interfaceStyle
     )
 
   }
@@ -206,7 +210,8 @@ public final class PixelEditViewController : UIViewController {
     doneButtonTitle: String = L10n.done,
     colorCubeStorage: ColorCubeStorage = .default,
     usesSquareCropping: Bool = true,
-    options: Options = .current
+    options: Options = .current,
+    interfaceStyle: String = "unspecified"
   ) {
 
     self.imageSource = source
@@ -214,6 +219,7 @@ public final class PixelEditViewController : UIViewController {
     self.colorCubeStorage = colorCubeStorage
     self.doneButtonTitle = doneButtonTitle
     self.usesSquareCropping = usesSquareCropping
+    self.interfaceStyle = interfaceStyle
     super.init(nibName: nil, bundle: nil)
 
   }
@@ -224,9 +230,34 @@ public final class PixelEditViewController : UIViewController {
   }
 
   // MARK: - Functions
+  
+  
+  func updateColors() {
+      switch interfaceStyle {
+      case "light":
+        Style.default.control.backgroundColor = .white
+        Style.default.black = .black
+      case "dark":
+        Style.default.control.backgroundColor =
+          .black
+        Style.default.black = .white
+      default:
+        if #available(iOS 13.0, *) {
+          Style.default.control.backgroundColor = .systemBackground
+          Style.default.black = .label
+        } else {
+          Style.default.control.backgroundColor = .white
+          Style.default.black = .black
+        }
+      }
+          
+  }
 
   public override func viewDidLoad() {
     super.viewDidLoad()
+    
+//    Style.default.control.backgroundColor = .red
+    updateColors()
 
     layout: do {
 
@@ -307,7 +338,7 @@ public final class PixelEditViewController : UIViewController {
       }
 
       root: do {
-        view.backgroundColor = Style.default.control.backgroundColor
+        view.backgroundColor = Style().control.backgroundColor
       }
 
       edit: do {

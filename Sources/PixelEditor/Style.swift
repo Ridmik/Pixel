@@ -23,53 +23,19 @@ import Foundation
 
 public struct Style {
 
-  public static let `default` = Style()
+  public static var `default` = Style()
 
   public struct Control {
 
-    public var backgroundColor: UIColor
+    public var backgroundColor: UIColor = .white
 
-    public init() {
-      if #available(iOS 12.0, *) {
-        switch UIScreen.main.traitCollection.userInterfaceStyle {
-        case .light:
-          backgroundColor = .white
-        case .dark:
-          backgroundColor = .black
-        case .unspecified:
-          if #available(iOS 13.0, *) {
-            backgroundColor = .systemBackground
-          } else {
-            backgroundColor = .white
-          }
-        }
-      } else {
-        backgroundColor = .white
-      }
-    }
+    public init() {}
   }
 
   public var control = Control()
   
-  public var black: UIColor
+  public var black: UIColor = .black
 
-  public init() {
-    if #available(iOS 12.0, *) {
-      switch UIScreen.main.traitCollection.userInterfaceStyle {
-      case .light:
-        black = .black
-      case .dark:
-        black = .white
-      case .unspecified:
-        if #available(iOS 13.0, *) {
-          black = .label
-        } else {
-          black = .black
-        }
-      }
-    } else {
-      black = .black
-    }
-  }
+  public init() {}
 
 }
