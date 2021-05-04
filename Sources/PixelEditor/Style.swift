@@ -23,23 +23,19 @@ import Foundation
 
 public struct Style {
 
-  public static let `default` = Style()
+  public static var `default` = Style()
 
   public struct Control {
 
-    public var backgroundColor = UIColor(white: 0.98, alpha: 1)
+    public var backgroundColor: UIColor = .white
 
-    public init() {
-
-    }
+    public init() {}
   }
 
   public var control = Control()
   
-  public var black = UIColor(white: 0.05, alpha: 1)
+  public var black: UIColor = .black
 
-  public init() {
-
-  }
+  public init() {}
 
 }

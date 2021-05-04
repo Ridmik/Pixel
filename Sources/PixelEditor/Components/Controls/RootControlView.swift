@@ -107,6 +107,12 @@ final class RootControl : RootControlBase {
 
       filtersButton.addTarget(self, action: #selector(didTapFilterButton), for: .touchUpInside)
       editButton.addTarget(self, action: #selector(didTapEditButton), for: .touchUpInside)
+     
+      editButton.setTitleColor(Style.default.black, for: .selected)
+      filtersButton.setTitleColor(Style.default.black.withAlphaComponent(0.5), for: .normal)
+      editButton.setTitleColor(Style.default.black.withAlphaComponent(0.5), for: .normal)
+      filtersButton.setTitleColor(Style.default.black, for: .selected)
+      
     }
 
   }

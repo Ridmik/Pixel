@@ -291,8 +291,8 @@ private final class _StepSlider: UISlider {
 
     layerContext.scaleBy(x: scale, y: scale)
 
-    UIColor(white: 0, alpha: 1).setStroke()
-    UIColor(white: 0, alpha: 1).setFill()
+    UIColor(red: 153/255, green: 162/255, blue: 173/255, alpha: 1).setStroke()
+    UIColor(red: 153/255, green: 162/255, blue: 173/255, alpha: 1).setFill()
 
     line: do {
       let path = UIBezierPath()
@@ -334,7 +334,7 @@ private final class _StepSlider: UISlider {
     let label = stepLabel
     label.backgroundColor = UIColor.clear
     label.font = UIFont.monospacedDigitSystemFont(ofSize: 12, weight: .medium)
-    label.textColor = UIColor.black
+    label.textColor = Style.default.black
     label.textAlignment = .center
 
     self.addSubview(label)
