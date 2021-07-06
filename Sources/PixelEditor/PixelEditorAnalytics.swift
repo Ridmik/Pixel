@@ -13,7 +13,7 @@ public enum PixelEditorEvent: String {
     case eventOpenVideoEditor = "open_video_editor_view"
 }
 
-public enum PixeslEngineAction: String {
+public enum PixeslEditorAction: String {
     case action
     case source
 }
