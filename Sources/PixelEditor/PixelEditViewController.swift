@@ -62,6 +62,8 @@ public final class PixelEditContext {
 
 public final class PixelEditViewController : UIViewController {
   
+  static let eventAnalyticsNotificationName = "PixelEditNotification"
+  
   public final class Callbacks {
     public var didEndEditing: (PixelEditViewController, EditingStack) -> Void = { _, _ in }
     public var didCancelEditing: (PixelEditViewController) -> Void = { _ in }

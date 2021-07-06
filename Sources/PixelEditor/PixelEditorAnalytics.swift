@@ -11,6 +11,8 @@ import Foundation
 public enum PixelEditorEvent: String {
     case eventOpenImageEditor = "open_image_editor"
     case eventOpenVideoEditor = "open_video_editor_view"
+    case eventTapOnImageFilterButton  = "tap_on_image_filter_button"
+    case eventTapOnImageEditButton = "tap_on_image_edit_button"
 }
 
 public enum PixeslEditorAction: String {
@@ -21,4 +23,8 @@ public enum PixeslEditorAction: String {
 public extension String {
 //    static let actionUserOpenImageEditor = "user opens image editor"
 //    static let actionUserOpenVideoEditor = "user opens video editor"
+    static let actionTappedFilter = "user tapped on filter action"
+    static let actionTappedOnImageEditButton = "user tapped on image edit action"
+  
+    static let seeFeed = "See Feed"
 }

@@ -155,7 +155,13 @@ final class RootControl : RootControlBase {
       subscribeChangedEdit(to: colorCubeControl)
       
       filtersButton.isSelected = true
-
+      let dict: [String: Any] = [
+          "event": PixelEditorEvent.eventTapOnImageFilterButton,
+          "action": [
+            PixelEditorEvent.action : .actionTappedFilter,
+          ]
+      ]
+      NotificationCenter.default.post(name: Notification.Name.init(PixelEditViewController.eventAnalyticsNotificationName), object: nil, userInfo: dict)
     case .edit:
       
       editView.frame = containerView.bounds
@@ -165,6 +171,13 @@ final class RootControl : RootControlBase {
       subscribeChangedEdit(to: editView)
     
       editButton.isSelected = true
+      let dict: [String: Any] = [
+          "event": PixelEditorEvent.eventTapOnImageEditButton,
+          "action": [
+            PixelEditorEvent.action : .actionTappedOnImageEditButton,
+          ]
+      ]
+      NotificationCenter.default.post(name: Notification.Name.init(PixelEditViewController.eventAnalyticsNotificationName), object: nil, userInfo: dict)
     }
   }
 
