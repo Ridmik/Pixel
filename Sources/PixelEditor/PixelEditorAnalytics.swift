@@ -19,6 +19,6 @@ public enum PixeslEditorAction: String {
 }
 
 public extension String {
-    static let actionUserOpenImageEditor = "user opens image editor"
-    static let actionUserOpenVideoEditor = "user opens video editor"
+//    static let actionUserOpenImageEditor = "user opens image editor"
+//    static let actionUserOpenVideoEditor = "user opens video editor"
 }
