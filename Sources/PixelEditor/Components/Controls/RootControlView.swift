@@ -158,7 +158,7 @@ final class RootControl : RootControlBase {
       let dict: [String: Any] = [
           "event": PixelEditorEvent.eventTapOnImageFilterButton,
           "action": [
-            PixelEditorEvent.action : .actionTappedFilter,
+            PixeslEditorAction.action : String.actionTappedFilter,
           ]
       ]
       NotificationCenter.default.post(name: Notification.Name.init(PixelEditViewController.eventAnalyticsNotificationName), object: nil, userInfo: dict)
@@ -174,7 +174,7 @@ final class RootControl : RootControlBase {
       let dict: [String: Any] = [
           "event": PixelEditorEvent.eventTapOnImageEditButton,
           "action": [
-            PixelEditorEvent.action : .actionTappedOnImageEditButton,
+            PixeslEditorAction.action : String.actionTappedOnImageEditButton,
           ]
       ]
       NotificationCenter.default.post(name: Notification.Name.init(PixelEditViewController.eventAnalyticsNotificationName), object: nil, userInfo: dict)
