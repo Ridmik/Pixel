@@ -25,6 +25,4 @@ public extension String {
 //    static let actionUserOpenVideoEditor = "user opens video editor"
     static let actionTappedFilter = "user tapped on filter action"
     static let actionTappedOnImageEditButton = "user tapped on image edit action"
-  
-    static let seeFeed = "See Feed"
 }
